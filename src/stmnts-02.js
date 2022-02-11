@@ -9,35 +9,35 @@
 
 /**
  * Calculates the sum of two numbers
- * @param {number} a - First number to calculate
- * @param {number} b - Second number to calculate
- * @returns {number} - The sum of the two numbers
+ * @param {number} a - 7
+ * @param {number} b - 3
+ * @returns {number} - 10
  */
 function sum(a, b) {
-  // write your code here & return value
+  return a + b;
 }
 
 /**
  * Calculates the sum of two numbers (even if they are passed as strings)
- * @param {number|string} x - First number to calculate
- * @param {number|string} y - Second number to calculate
- * @returns {number} - The sum of the two numbers
+ * @param {number|string} x - 10
+ * @param {number|string} y - 5
+ * @returns {number} - 15
  */
 function betterSum(x, y) {
-  // write your code here & return value
+  return +x + +y;
 }
 
 /**
  * Calculates the remainder of two numbers, the first divided by the second
- * @param {number} number - the number to be divided
- * @param {number} divisor - the divisor of the number
- * @returns {number} - the remainder of the number and the divisor
+ * @param {number} number - 15
+ * @param {number} divisor - 5
+ * @returns {number} - 3
  *
  * ? [JavaScript: The Definitive Guide, Chapter 4.8](https://bit.ly/2Z30rSk)
  * ? computes the first operand modulo the second operand
  */
 function remainder(number, divisor) {
-  // write your code here & return value
+  return number % divisor;
 }
 module.exports = {
   sum,

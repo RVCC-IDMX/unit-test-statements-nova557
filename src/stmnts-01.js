@@ -9,38 +9,38 @@
 
 /**
  * Calculates the next integer as if you were counting up by 1
- * @param {integer} int - The integer
- * @returns {integer} - the next integer as if you were counting up by 1
+ * @param {integer} int - 1
+ * @returns {integer} - 2
  */
 function nextInteger(int) {
-  // write your code here & return value
+  return int + 1;
 }
 /**
  * Calculates the product of two numbers
- * @param {number} a - First number
- * @param {number} b - Second number
- * @returns {number} - The result of the multiplication
+ * @param {number} a - 5
+ * @param {number} b - 2
+ * @returns {number} - 10
  */
 function times(a, b) {
-  // write your code here & return value
+  return a * b;
 }
 
 /**
  * Converts the number of minutes into seconds
- * @param {number} minutes - the number of minutes to convert
- * @returns {number} - the number of seconds
+ * @param {number} minutes - 3
+ * @returns {number} - 180
  */
 function convertMinutesToSeconds(minutes) {
-  // write your code here & return value
+  return minutes * 60;
 }
 
 /**
  * Converts the number of hours into seconds
- * @param {number} hours - the number of hours to convert
- * @returns {number} - the number of seconds
+ * @param {number} hours - 2
+ * @returns {number} - 7200
  */
 function convertHoursToSeconds(hours) {
-  // write your code here & return value
+  return hours * 3600;
 }
 
 module.exports = {

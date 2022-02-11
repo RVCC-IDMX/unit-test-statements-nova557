@@ -9,31 +9,31 @@
 
 /**
  * Calculates the perimeter of the rectangle rounded to 2 decimal places
- * @param {number} width - the width of the rectangle
- * @param {number} height - the height of the rectangle
- * @returns {number} - the perimeter of the rectangle rounded to 2 decimal places
+ * @param {number} width - 10
+ * @param {number} height - 15
+ * @returns {number} - 0.50
  *
  */
 
 function rectanglePerimeter(width, height) {
-  // write your code here & return
+  return +((width + height) * 2).toFixed(2);
 }
 
 /**
  * Calculates the area of a rectangle rounded to 2 decimal places
- * @param {number} width - the width of the rectangle
- * @param {number} height - the height of the rectangle
- * @returns {number} - the area of the rectangle rounded to 2 decimal places
+ * @param {number} width - 10
+ * @param {number} height - 15
+ * @returns {number} - 1.5
  *
  */
 function rectangleArea(width, height) {
-  // write your code here & return
+  return +(width * height).toFixed(2);
 }
 
 /**
  * Calculates the circumference of a circle with a known radius
  * rounded to 2 decimal places
- * @param {number} radius - the radius of the circle
+ * @param {number} radius - 3
  * @returns {number} - the circumference of the circle rounded to 2 decimal places
  *
  * The math equation is c = 2 * pi * radius
@@ -41,7 +41,7 @@ function rectangleArea(width, height) {
  * Hint: use toFixed()
  */
 function circleCircumference(radius) {
-  // write your code here & return
+  return +(2 * Math.PI * radius).toFixed(2);
 }
 
 /**
@@ -51,7 +51,7 @@ function circleCircumference(radius) {
  * @returns {number} - the area of the circle rounded to 2 decimal places
  */
 function circleArea(radius) {
-  // write your code here & return
+  return +(Math.PI * radius * radius).toFixed(2);
 }
 
 /**
@@ -63,7 +63,7 @@ function circleArea(radius) {
  * @returns {number} - the area of the triangle rounded to 2 decimal places
  */
 function triangleArea(base, height) {
-  // write your code here & return
+  return +((base * height) / 2).toFixed(2);
 }
 
 /**
@@ -74,7 +74,7 @@ function triangleArea(base, height) {
  * @returns {number} - the hypotenuse of the triangle rounded to 2 decimal places
  */
 function pythagorean(sideA, sideB) {
-  // write your code here & return
+  return +Math.hypot(sideA, sideB).toFixed(2);
 }
 
 module.exports = {
