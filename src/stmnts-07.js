@@ -50,7 +50,7 @@ function invertBoolean(bool) {
  */
 function numberOfOdds(num) {
   let count = 0;
-  for (let i = 0; i < num; i + 1) {
+  for (let i = 0; i < num; i += 1) {
     if (i % 2 === 1) {
       count += 1;
     }
@@ -67,12 +67,12 @@ function numberOfOdds(num) {
  * ? using a for loop from 0 to num, iterating by 1
  * ? For example, num is 4 then return 10 because 1 + 2 + 3 + 4 = 10.
  */
+// eslint-disable-next-line consistent-return
 function addUpTheNumbers(num) {
-  let count = 0;
-  for (let i = 0; i < num; i + 1) {
-    count += i;
+  const count = 0;
+  for (let i = 0; i < num; i += 1) {
+    if (i % 2 === 1) return count;
   }
-  return count;
 }
 
 /**
