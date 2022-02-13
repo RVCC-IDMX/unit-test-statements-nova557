@@ -69,10 +69,11 @@ function numberOfOdds(num) {
  */
 // eslint-disable-next-line consistent-return
 function addUpTheNumbers(num) {
-  const count = 0;
-  for (let i = 0; i < num; i += 1) {
-    if (i % 2 === 1) return count;
+  let count = 0;
+  for (let i = 0; i <= num; i += 1) {
+    count += i;
   }
+  return count;
 }
 
 /**
@@ -88,7 +89,7 @@ function addUpTheNumbers(num) {
  * ? < 90	B
  * ? <= 100	A
  * ? return the letter grade as a string
- * ?
+ * ?.
  */
 function gradeGenerator(score) {
   if (score < 60) {
